@@ -12,7 +12,7 @@
 ## Shellcode Description
 Null-Free, PIC, and extremely small-size Windows x64 shellcode that pops `calc.exe` program, can be used to test shellcode injection and/or code execution. The shellcode works by dynamically resolving the base address of `kernel32.dll` via `PEB` and `ExportTable` method. 
 
-To resolve the base address of kernel32.dll, the steps are as follows:
+To resolve the base address of `kernel32.dll`, the steps are as follows:
 
 1. Locate the address of `TEB` in the Intel `GS` register
 2. Locate the address of `PEB` in the TEB structure
@@ -21,7 +21,7 @@ To resolve the base address of kernel32.dll, the steps are as follows:
 5. The 3rd entry of doubly-linked list InMemoryOrderModuleList: `program.exe(shellcode loading program) -> ntdll.dll -> kernel32.dll`
 6. Find DllBase of the current module in `_LDR_DATA_TABLE_ENTRY structure`
 
-After getting the base address of kernel32.dll, parse kernel32.dll and locate `WinExec()` function. The steps are as follows:
+After getting the base address of kernel32.dll, parse kernel32.dll and locate `WinExec` function. The steps are as follows:
 
 1. Locate the `Export Directory`
 2. Get the `number of function names` and use it as an index
