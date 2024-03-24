@@ -3,12 +3,12 @@ from keystone import *
 
 
 # Shellcode Author: Senzee
-# Shellcode Title: Windows/x64 - PIC Null-Free Calc.exe Shellcode (169 Bytes)
+# Shellcode Title: Windows/x64 - PIC Null-Free Calc.exe Shellcode (173 Bytes)
 # Date: 07/26/2023
 # Platform: Windows x64
 # Tested on: Windows 11 Home/Windows Server 2022 Standard/Windows Server 2019 Datacenter
 # OS Version (respectively): 10.0.22621 /10.0.20348 /10.0.17763
-# Shellcode size: 169 bytes
+# Shellcode size: 173 bytes
 # Shellcode Desciption: Windows x64 shellcode that dynamically resolves the base address of kernel32.dll via PEB and ExportTable method.
 # Contains no Null bytes (0x00), and therefor will not crash if injected into typical stack Buffer OverFlow vulnerabilities.
 
