@@ -1,9 +1,9 @@
-## Windows/x64 - PIC Null-Free Calc.exe Shellcode (169 Bytes)
+## Windows/x64 - PIC Null-Free Calc.exe Shellcode (173 Bytes)
 
 ### Shellcode Author:    Senzee
 ##### OS Architecture:   Windows x64
 ##### Tested On:         Windows 11 Home 10.0.22621, Windows Server 2022 Standard 10.0.20348, Windows Server 2019 Datacenter 10.0.17763
-##### Shellcode Size:    169 bytes
+##### Shellcode Size:    173 bytes
 ##### Null-Free:         True
 
 ![image](/screenshot/calc.jpg)
